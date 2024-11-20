@@ -6,7 +6,7 @@ ParkMe is a parking rental application that can work in any region you want and 
 
 ### Screenshots
 
-![Register Screen](screenshots/resiter.png)
+![Register Screen](screenshots/register.png)
 ![Home page](screenshots/home.png)
 ![](screenshots/drawer.png)
 ![Create parkspot](screenshots/create.png)
