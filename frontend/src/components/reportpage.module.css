@@ -1,0 +1,142 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    text-align: center;
+
+}
+
+.welcome2{
+    margin-top: 8vh;
+    font-size: 2.5rem;
+}
+.mailsec{
+    margin-bottom: 6vh;
+
+}
+.input{
+    background-color: #f9fafb;
+    margin-top: 6vh;
+    padding: 0.5rem;
+    padding-left: 2.5vw;
+    height: 56px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: large;
+    font-weight: 500;
+}
+.button{
+    margin-top: 4vh;
+    padding: 1rem 2.5rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #5B82FC;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 1rem;
+    
+} 
+
+.navbar{
+    height: 6vh;
+    background-color: orange;
+    justify-content:space-between;
+    display: flex;
+    flex-direction: row;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    cursor: default;
+
+}
+
+.drawericon , .profileicon {
+    font-size: 4vh;
+    margin-top: 0.8vh;
+}
+
+.drawer {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px; /* Width of the drawer */
+    background-color: #f0f0f0;
+    z-index: 1000;
+    transform: translateX(-250px); /* Initially off-screen */
+    transition: transform 0.3s ease-out;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.drawer.open {
+    transform: translateX(0); /* Slide in when open */
+}
+
+.drawerClose {
+    position: absolute;
+    top: 0;
+    right: 1vw;
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 999;
+    display: none;
+    transition: opacity 0.3s ease-out;
+}
+
+.overlay.open {
+    display: block;
+    opacity: 1;
+}
+
+
+.userinfo{
+    margin-top: 1vh;
+    margin-left: 1.5vw;
+}
+
+.clicks{
+    padding: 2vh 2vw;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.clicks :hover{
+    background-color:red;
+}
+
+.drwrhr{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.2vh dashed rgb(0, 115, 255);
+}
+
+
+.brand{
+    margin-top: auto;
+    text-align: center;
+    color: blueviolet;
+}
+
+.logout{
+    border: none;
+    margin-top: 3vh;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+}

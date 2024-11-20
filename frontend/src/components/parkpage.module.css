@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    height: 6vh;
+    background-color: orange;
+    justify-content:space-between;
+    display: flex;
+    flex-direction: row;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    cursor: default;
+}
+
+.drawericon , .profileicon {
+    font-size: 4vh;
+    margin-top: 0.8vh;
+}
+
+.welcome{
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 0;
+    
+}
+
+/* parkcreatepage */
+
+.formcontainer{
+    text-align: center;
+}
+
+.inputs{
+    text-align: center;
+    background-color: #e8e8e8;
+    margin-top: 5vh;
+    padding: 0.5rem;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+
+.button{
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    padding: 0.8rem;
+    border: 2px solid #396afd;
+    border-radius: 9px;
+    background-color: #5B82FC;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 1rem;
+    
+} 
+
+/* parkdetailpage */
+
+.info{
+    text-align: center;
+    margin-top: 2vh;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.qrcontainer{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.download{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2vh;
+    padding: 0.6rem;
+    border: 3px solid black;
+    border-radius: 1rem;
+    background-color: rgb(137, 137, 137);
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 0.8rem;
+
+}
+
+.sessionbuttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5vw;
+    margin-top: 3vh;
+    margin-bottom: 4vh;
+}
+
+.startpark{
+    text-align: center;
+    padding: 0.6rem;
+    border: 3px solid black;
+    border-radius: 1rem;
+    background-color: rgb(64, 208, 59);
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.stoppark{
+    text-align: center;
+    padding: 0.6rem;
+    border: 3px solid black;
+    border-radius: 1rem;
+    background-color: rgb(255, 49, 49);
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+
+.disabledButton{
+    text-align: center;
+    padding: 0.6rem;
+    border: 3px solid black;
+    border-radius: 1rem;
+    background-color: #ccc;
+    color: #000;
+     cursor: not-allowed;
+    pointer-events: none; 
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+
+  .activemessage{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: center;
+    margin-bottom: 5vh;
+  }
+/* qrscanpage */
+
+.scancontrol{
+    margin-top: 3vh;
+    margin-bottom: 4vh;
+    padding: 0.7rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    font-weight: bold;
+    background-color: rgb(255, 204, 204);
+}
+
+.flexcntrl{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.successMessage{
+    background-color: greenyellow;
+    border-radius: 1rem;
+    padding: 0.7rem;
+}
+
+/* drawer */
+
+.navbar{
+    height: 6vh;
+    background-color: orange;
+    justify-content:space-between;
+    display: flex;
+    flex-direction: row;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+.drawer {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px; /* Width of the drawer */
+    background-color: #f0f0f0;
+    z-index: 1000;
+    transform: translateX(-250px); /* Initially off-screen */
+    transition: transform 0.3s ease-out;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.drawer.open {
+    transform: translateX(0); /* Slide in when open */
+}
+
+.drawerClose {
+    position: absolute;
+    top: 0;
+    right: 1vw;
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 999;
+    display: none;
+    transition: opacity 0.3s ease-out;
+}
+
+.overlay.open {
+    display: block;
+    opacity: 1;
+}
+
+
+.userinfo{
+    margin-top: 1vh;
+    margin-left: 1.5vw;
+}
+
+.clicks{
+    padding: 2vh 2vw;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.clicks :hover{
+    background-color:red;
+}
+
+.drwrhr{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.2vh dashed rgb(0, 115, 255);
+}
+
+
+.brand{
+    margin-top: auto;
+    text-align: center;
+    color: blueviolet;
+}
+
+.logout{
+    border: none;
+    margin-top: 3vh;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+/* ownerpark */
+
+ul {
+    list-style-type: none;
+}
+
+.parkcontainer{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(223, 188, 255);
+    width: 80%;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+
+}
+.infos{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+.dontpark{
+    text-align: center;
+    margin-top: 10vh;
+    color: red;
+}
